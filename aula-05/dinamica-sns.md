@@ -1,7 +1,7 @@
 # Dinâmica Amazon Simple Notification Service 
 ### Passo 1: Criar um Tópico SNS
 * **Acesse** o AWS Management Console e faça login.
-* **Encontre o serviço SNS: **No campo de busca, digite “SNS” e clique em Simple Notification Service para abrir o painel do SNS.
+* **Encontre o serviço SNS:** No campo de busca, digite “SNS” e clique em Simple Notification Service para abrir o painel do SNS.
 * **Criar novo tópico:** Clique em “Create topic”.
 * **Escolha o tipo de tópico:** Selecione “Standard” para um tópico que permite entrega de mensagens múltiplas e em qualquer ordem, ou “FIFO” para entrega ordenada e sem duplicatas. Para este tutorial, escolha “Standard”.
 * **Configure o tópico:**
