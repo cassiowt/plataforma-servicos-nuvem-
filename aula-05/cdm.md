@@ -1,4 +1,4 @@
-# **Como Funciona uma CDN**
+# Como Funciona uma CDN
 
  #### CDN - é uma plataforma de servidores interconectados distribuídos geograficamente projetada para fornecer conteúdo da web e outros conteúdos digitais a usuários finais com alta disponibilidade e desempenho. CDNs desempenham um papel crucial na diminuição da latência - o tempo de atraso entre a solicitação de um recurso pelo usuário e o momento em que esse recurso é recebido - garantindo que o conteúdo seja entregue o mais rápido possível, independentemente da localização geográfica do usuário.
 
