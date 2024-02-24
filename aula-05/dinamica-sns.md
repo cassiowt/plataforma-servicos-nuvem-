@@ -1,4 +1,4 @@
-# Dinâmica SN
+# Dinâmica Amazon Simple Notification Service 
 ### Passo 1: Criar um Tópico SNS
 * **Acesse** o AWS Management Console e faça login.
 * **Encontre o serviço SNS: **No campo de busca, digite “SNS” e clique em Simple Notification Service para abrir o painel do SNS.
