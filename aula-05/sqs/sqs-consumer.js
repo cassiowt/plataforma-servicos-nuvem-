@@ -18,5 +18,5 @@ const run = async () => {
 
 run();
 
-//const queueURL = "https://sqs.us-east-2.amazonaws.com/489323066454/LogisticaRastreamentoQueue";
+//aws sqs send-message --queue-url "https://sqs.us-east-2.amazonaws.com/489323066454/LogisticaRastreamentoQueue" --message-body "status: entregue, pacote: 123, timestamp: 1617702769" ;
 
