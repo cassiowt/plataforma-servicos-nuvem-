@@ -1,0 +1,35 @@
+<wsdl:message name="subtrairRequest">
+    <wsdl:part name="a" type="xs:int"/>
+    <wsdl:part name="b" type="xs:int"/>
+</wsdl:message>
+
+<wsdl:message name="subtrairResponse">
+    <wsdl:part name="subres" type="xs:int"/>
+</wsdl:message>
+
+<!-- ... Restante do WSDL ... -->
+
+<wsdl:portType name="calcP">
+    <!-- ... Operações existentes ... -->
+
+    <wsdl:operation name="subtrair">
+        <wsdl:input message="subtrairRequest"/>
+        <wsdl:output message="subtrairResponse"/>
+    </wsdl:operation>
+</wsdl:portType>
+
+<wsdl:binding name="calcB" type="calcP">
+    <!-- ... Binding para as operações existentes ... -->
+
+    <wsdl:operation name="subtrair">
+        <soap:operation soapAction="subtrair"/>
+        <wsdl:input>
+            <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="literal"/>
+        </wsdl:input>
+        <wsdl:output>
+            <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="literal"/>
+        </wsdl:output>
+    </wsdl:operation>
+</wsdl:binding>
+
+<!-- ... Restante do WSDL ... -->

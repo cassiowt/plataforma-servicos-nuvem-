@@ -14,6 +14,11 @@ var myservice = {
             multiplicar : function(args) {
                 var n = args.a * args.b;
                 return { mulres : n };
+            },
+            
+            subtrair : function(args) {
+                var n = args.a - args.b;
+                return { subres : n };
             }
         }
     }
@@ -28,6 +33,6 @@ app.listen(8001, function(){
     //Note: /wsdl route will be handled by soap module
     //and all other routes & middleware will continue to work
     soap.listen(app, '/wscalc1', myservice, xml, function(){
-        console.log('server initialized');
+        console.log('server initialized on port 8001');
     });
 });
