@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Postcard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Adicionar Postcard</h1>
+  <form action="/add" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="cidade">Cidade:</label>
+    <input type="text" id="cidade" name="cidade" required>
+    <label for="pais">País:</label>
+    <input type="text" id="pais" name="pais" required>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required></textarea>
+    <label for="imageUrl">URL da Imagem:</label>
+    <input type="text" id="imageUrl" name="imageUrl" required>
+    <button type="submit">Adicionar</button>
+  </form>
+  <a href="/">Voltar para a lista de Postcards</a>
+</body>
+</html>
