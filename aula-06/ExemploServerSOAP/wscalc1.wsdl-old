@@ -17,14 +17,6 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <wsdl:message name="multiplicarResponse">
         <wsdl:part name="mulres" type="xs:string"/>
     </wsdl:message>
-    <wsdl:message name="subtrairRequest">
-        <wsdl:part name="a" type="xs:int"/>
-        <wsdl:part name="b" type="xs:int"/>
-    </wsdl:message>
-    <wsdl:message name="subtrairResponse">
-        <wsdl:part name="subres" type="xs:int"/>
-    </wsdl:message>
-
     <wsdl:portType name="calcP">
         <wsdl:operation name="somar">
             <wsdl:input message="somarRequest"/>
@@ -33,10 +25,6 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
         <wsdl:operation name="multiplicar">
             <wsdl:input message="multiplicarRequest"/>
             <wsdl:output message="multiplicarResponse"/>
-        </wsdl:operation>
-        <wsdl:operation name="subtrair">
-            <wsdl:input message="subtrairRequest"/>
-            <wsdl:output message="subtrairResponse"/>
         </wsdl:operation>
     </wsdl:portType>
     <wsdl:binding name="calcB" type="calcP">
@@ -52,15 +40,6 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
         </wsdl:operation>
         <wsdl:operation name="multiplicar">
             <soap:operation soapAction="multiplicar"/>
-            <wsdl:input>
-                <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="literal"/>
-            </wsdl:input>
-            <wsdl:output>
-                <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="literal"/>
-            </wsdl:output>
-        </wsdl:operation>
-        <wsdl:operation name="subtrair">
-            <soap:operation soapAction="subtrair"/>
             <wsdl:input>
                 <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="literal"/>
             </wsdl:input>
